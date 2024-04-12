@@ -25,10 +25,10 @@ def write_python_file_with_comments(py_file_path, new_py_file_path, vessel_dict)
             else:
                 new_pyfile.write(line)
 
-# Replace 'your_csv_file_path.csv' and 'your_python_file_path.py' with your actual file paths
+# Replace '' with your actual file paths
 csv_file_path = ''
 py_file_path = ''
-new_py_file_path = 'y' # Or you can overwrite the original
+new_py_file_path = '' # Or you can overwrite the original
 
 # Read vessel IDs from CSV
 vessel_dict = read_vessel_ids_from_csv(csv_file_path)
