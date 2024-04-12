@@ -1,3 +1,5 @@
+# This script gets a full list of cases for a vessel using the VesselID
+
 from zeep import Client
 
 wsdl_url = 'https://cgmix.uscg.mil/xml/PSIXData.asmx?WSDL'

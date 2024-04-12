@@ -1,3 +1,5 @@
+# This script gets a singular deficiency for a vessel using the Activity Number. The Activity Number can be found by searching for the vessel on the PSIX website and looking at the Activity Number.
+
 from zeep import Client
 
 wsdl_url = 'https://cgmix.uscg.mil/xml/PSIXData.asmx?WSDL'
