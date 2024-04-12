@@ -7,7 +7,7 @@ def read_vessel_ids_from_csv(csv_file_path):
         vessel_dict = {}
         for row in reader:
             vessel_id = row['VesselId'].strip()
-            vessel_name = row['Vessel Name'].strip()
+            vessel_name = row['Vessel Name'].strip()  # Now 'Vessel Name' should work
             vessel_dict[vessel_id] = vessel_name
         return vessel_dict
 
@@ -25,12 +25,10 @@ def write_python_file_with_comments(py_file_path, new_py_file_path, vessel_dict)
             else:
                 new_pyfile.write(line)
 
-# File paths
-csv_file_path = 'CSV_FILE_WITH_VESSEL_IDS_AND_NAMES.csv'
-py_file_path = 'Full_VesselID_List.py'
-
-# MAKE SURE YOU RENAME THE OTHERS OR RENAME THE NEW FILE!!!
-new_py_file_path = 'NEW_LIST.py' # Or you can overwrite the original 
+# Replace 'your_csv_file_path.csv' and 'your_python_file_path.py' with your actual file paths
+csv_file_path = ''
+py_file_path = ''
+new_py_file_path = 'y' # Or you can overwrite the original
 
 # Read vessel IDs from CSV
 vessel_dict = read_vessel_ids_from_csv(csv_file_path)
